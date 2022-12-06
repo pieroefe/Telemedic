@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386494722920",
+    "project_id": "telemedic-a22e9",
+    "storage_bucket": "telemedic-a22e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386494722920:android:79fc893cc0c67b49935cdd",
+        "android_client_info": {
+          "package_name": "com.example.telemedic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386494722920-9kjppslg8em7tac5qgd293fm4m2gd9lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAslV2pj-uDIwMFAJKwQLe0kfl3uh-2RJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386494722920-9kjppslg8em7tac5qgd293fm4m2gd9lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

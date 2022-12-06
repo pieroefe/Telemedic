@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_lista_fisicos"
+        android:icon="@drawable/ic_fisicas"
+        android:title="Prob.Fisicos" />
+    <item
+        android:id="@+id/menu_lista_psicologicos"
+        android:icon="@drawable/ic_psicologica"
+        android:title="Prob.Psicologicos" />
+    <item
+        android:id="@+id/menu_lista_usuarios"
+        android:icon="@drawable/ic_users"
+        android:title="Usuarios" />
+
+</menu>

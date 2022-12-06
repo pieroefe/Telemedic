@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Telemedic</string>
+    <string-array name="etiquetas">
+
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Severo</item>
+
+    </string-array>
 </resources>
