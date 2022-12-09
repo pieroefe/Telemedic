@@ -93,7 +93,7 @@ public class Lista_psicologicas_admin extends AppCompatActivity {
     public void setBottomNavigationView(){
         bottomNavigationView = findViewById(R.id.bottomNavigationAdmin);
         bottomNavigationView.clearAnimation();
-        bottomNavigationView.setSelectedItemId(R.id.menu_lista_fisicos);
+        bottomNavigationView.setSelectedItemId(R.id.menu_lista_psicologicos);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

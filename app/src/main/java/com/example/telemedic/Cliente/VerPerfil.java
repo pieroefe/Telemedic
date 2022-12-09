@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class VerPerfil extends AppCompatActivity {
 
-    Button btn_actualizar_perfil,btn_cancelar;
+    Button btn_actualizar_perfil,btn_cancelar,btn_foto_perfil;
     TextView correo,codigo;
     EditText nombre;
     private FirebaseFirestore firebaseFirestore;
@@ -46,6 +46,7 @@ public class VerPerfil extends AppCompatActivity {
         nombre = findViewById(R.id.et_nombre_perfil_usuario);
         btn_actualizar_perfil = findViewById(R.id.btn_editar_perfil);
         btn_cancelar = findViewById(R.id.btn_cancelar_perfil);
+        btn_foto_perfil = findViewById(R.id.btn_foto_perfil);
 
         getPerfil(id);
 

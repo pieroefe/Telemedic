@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
 
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyAaTIpJJz9U6bzoEREwFeBdUa9bUBuRBWE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -16,9 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Telemedic"
         tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAaTIpJJz9U6bzoEREwFeBdUa9bUBuRBWE" />
+
+
         <activity
-            android:name=".VerMapa"
-            android:exported="false" >
+            android:name=".Cliente.VerMapa"
+            android:exported="false"
+            android:parentActivityName=".Cliente.Menu_principal_cliente">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
