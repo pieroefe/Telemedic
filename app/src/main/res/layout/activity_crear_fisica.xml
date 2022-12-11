@@ -7,15 +7,15 @@
     tools:context=".Admin.Crear_fisica">
 
     <LinearLayout
-        android:layout_width="366dp"
-        android:layout_height="250dp"
+        android:layout_width="365dp"
+        android:layout_height="484dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37">
+        app:layout_constraintVertical_bias="0.126">
 
         <TextView
             android:id="@+id/textView4"
@@ -39,7 +39,7 @@
         <EditText
             android:id="@+id/et_fisico_recomendacion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="112dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -52,7 +52,7 @@
         <EditText
             android:id="@+id/et_fisico_preguntas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="112dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -65,7 +65,7 @@
         <EditText
             android:id="@+id/et_fisico_errores"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="112dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -75,13 +75,14 @@
         android:id="@+id/btn_add_fisico_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#40BD45"
         android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <Spinner
         android:id="@+id/spinner_etiqueta_fisica"
@@ -91,13 +92,13 @@
         android:spinnerMode="dialog"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.489"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
 
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <TextView
         android:id="@+id/textView27"
@@ -106,8 +107,8 @@
         android:text="Seleccione la etiqueta correspondiente:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.742" />
 </androidx.constraintlayout.widget.ConstraintLayout>

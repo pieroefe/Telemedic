@@ -8,17 +8,20 @@ public class Usuario {
     private String correo;
     private String rol;
     private String key;
+    private String foto;
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String codigo, String correo, String rol, String key) {
+    public Usuario(String nombre, String codigo, String correo, String rol, String key, String foto) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.correo = correo;
         this.rol = rol;
         this.key = key;
+        this.foto = foto;
     }
+
 
     public String getNombre() {
         return nombre;
@@ -58,5 +61,13 @@ public class Usuario {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }

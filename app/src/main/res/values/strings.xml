@@ -7,4 +7,5 @@
         <item>Severo</item>
 
     </string-array>
+    <string name="title_activity_ver_mapa">VerMapa</string>
 </resources>

@@ -96,6 +96,7 @@ public class Menu_principal_cliente extends AppCompatActivity {
 
     public void IrMapa(View view) {
 
+
         Intent intent = new Intent(this, VerMapa.class);
         startActivity(intent);
     }

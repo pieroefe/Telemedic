@@ -39,7 +39,8 @@
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="#20D627"
+
+                    android:backgroundTint="#40BD45"
                     android:text="Ver Detalles" />
             </LinearLayout>
         </LinearLayout>
