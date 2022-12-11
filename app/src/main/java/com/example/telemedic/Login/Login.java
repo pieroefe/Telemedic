@@ -74,13 +74,45 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 String emailUser = correo.getText().toString().trim();
                 String contraUser = contra.getText().toString().trim();
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z.]+";
                 String rol = "";
+                boolean correoValido = true;
+                boolean passwordValido = true;
+
 
                 if(emailUser.isEmpty() && contraUser.isEmpty()){
-                    Toast.makeText(Login.this,"Ingrese los datos correspondientes", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this,"Ingrese su correo y contraseña", Toast.LENGTH_SHORT).show();
+                    correoValido = false;
+                }
 
-                }else
-                    loginUser(emailUser,contraUser);
+
+
+
+                if(emailUser.isEmpty()){
+                    Toast.makeText(Login.this,"Ingrese su correo", Toast.LENGTH_SHORT).show();
+                    correoValido = false;
+                }
+
+                if(contraUser.isEmpty()){
+                    Toast.makeText(Login.this,"Ingrese su contraseña", Toast.LENGTH_SHORT).show();
+                    passwordValido = false;
+                }
+
+                if(!emailUser.matches(emailPattern)){
+                    Toast.makeText(Login.this,"Ingrese un correo", Toast.LENGTH_SHORT).show();
+                    correoValido = false;
+                }
+
+                if(correoValido && passwordValido){
+
+                    loginUser(emailUser, contraUser);
+
+                }
+
+
+
+
+
 
 
             }

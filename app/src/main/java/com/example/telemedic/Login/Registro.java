@@ -69,12 +69,58 @@ public class Registro extends AppCompatActivity {
                 String contraUser = contra.getText().toString().trim();
                 String confirmaUser = confirma.getText().toString().trim();
                 String rolUser = "cliente";
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z.]+";
+
+                boolean correoValido = true;
+                boolean passwordValido = true;
+                boolean codigoValido = true;
+                boolean nombreValido = true;
+
+                if( nameUser.length()>15 ){
+                    Toast.makeText(Registro.this,"Su nombre no puede tener mas de 15 caracteres", Toast.LENGTH_SHORT).show();
+                    nombreValido = false;
+
+                }
+
+                if(codigoUser.length()>8){
+                    Toast.makeText(Registro.this,"Su código debe tener ser 8 números", Toast.LENGTH_SHORT).show();
+                    codigoValido =false;
+                }
+
+                if(codigoUser.matches("[0-9]")){
+                    Toast.makeText(Registro.this,"Su código debe ser solo números", Toast.LENGTH_SHORT).show();
+                    codigoValido =false;
+                }
+
+                if(!correoUser.matches(emailPattern)){
+                    Toast.makeText(Registro.this,"Ingrese un correo valido", Toast.LENGTH_SHORT).show();
+                    correoValido = false;
+                }
+
+                if(contraUser.length()<6){
+                    Toast.makeText(Registro.this,"Su contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
+                    passwordValido =false;
+
+                }
+
+                if(contraUser != confirmaUser){
+                    Toast.makeText(Registro.this,"Vuelva a colocar la contraseña", Toast.LENGTH_SHORT).show();
+                    passwordValido =false;
+
+                }
+
+                if(nameUser.isEmpty() || codigoUser.isEmpty() || correoUser.isEmpty() || contraUser.isEmpty() || confirmaUser.isEmpty()) {
+                    Toast.makeText(Registro.this, "Complete los datos correspondientes", Toast.LENGTH_SHORT).show();
+                    nombreValido = false;
+                    codigoValido =false;
+                    correoValido = false;
+                    passwordValido =false;
+
+                }
 
 
-                if(nameUser.isEmpty() || codigoUser.isEmpty() || correoUser.isEmpty() || contraUser.isEmpty() || confirmaUser.isEmpty()){
-                    Toast.makeText(Registro.this,"Complete los datos correspondientes", Toast.LENGTH_SHORT).show();
 
-                }else{
+                if(nombreValido && codigoValido && correoValido && passwordValido){
                     registerUser(nameUser,codigoUser ,correoUser , contraUser,confirmaUser,rolUser);
 
                 }
