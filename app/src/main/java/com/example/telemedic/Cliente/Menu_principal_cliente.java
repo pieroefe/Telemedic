@@ -63,7 +63,8 @@ public class Menu_principal_cliente extends AppCompatActivity {
                     ActivityCompat.requestPermissions(Menu_principal_cliente.this,new String[]{Manifest.permission.CALL_PHONE},255);
 
                 }else{
-                    String numero = "971551391";
+                    //String numero = "971551391";
+                    String numero = "911";
                     String inicio = "tel:" + numero ;
                     Intent i = new Intent(Intent.ACTION_CALL);
                     i.setData(Uri.parse(inicio));

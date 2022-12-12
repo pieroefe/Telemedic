@@ -329,14 +329,17 @@ public class VerPerfil extends AppCompatActivity {
         firebaseFirestore.collection("user").document(id).update(map).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Toast.makeText(getApplicationContext(),"Exito al editar", Toast.LENGTH_SHORT).show();
+                if (actualizar_foto == false){
+                    Toast.makeText(getApplicationContext(),"Exito al editar datos", Toast.LENGTH_SHORT).show();
+                }
+
 
 
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(),"Error al actualizar", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Error al actualizar datos", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -359,8 +362,9 @@ public class VerPerfil extends AppCompatActivity {
                                     HashMap<String,Object> map = new HashMap<>();
                                     map.put("foto",uri);
                                     firebaseFirestore.collection("user").document(idd).update(map);
-                                    Toast.makeText(getApplicationContext(),"Foto Actulizada", Toast.LENGTH_SHORT).show();
+                                    //Toast.makeText(getApplicationContext(),"Foto Actulizada", Toast.LENGTH_SHORT).show();
                                     progressDialog.dismiss();
+                                    Toast.makeText(getApplicationContext(),"Exito al editar datos", Toast.LENGTH_SHORT).show();
                                     finish();
 
 
@@ -372,6 +376,7 @@ public class VerPerfil extends AppCompatActivity {
 
                                     e.printStackTrace();
                                     progressDialog.dismiss();
+                                    Toast.makeText(getApplicationContext(),"Error al actualizar datos", Toast.LENGTH_SHORT).show();
                                     finish();
                                 }
                             });
@@ -387,6 +392,7 @@ public class VerPerfil extends AppCompatActivity {
                     Toast.makeText(VerPerfil.this,"Error al cargar foto", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                     progressDialog.dismiss();
+                    Toast.makeText(getApplicationContext(),"Error al actualizar datos", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             });

@@ -62,6 +62,7 @@ public class ForgetPassword extends AppCompatActivity {
                     mDialog.setCanceledOnTouchOutside(false);
                     mDialog.show();
                     resetPassword();
+                    finish();
                 }
                 else{
                     Toast.makeText( ForgetPassword.this, "Debe ingresar su correo", Toast.LENGTH_SHORT).show();

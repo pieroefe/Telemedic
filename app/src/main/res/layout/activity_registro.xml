@@ -70,6 +70,7 @@
                 android:layout_height="63dp"
                 android:ems="10"
                 android:hint="Nombre:"
+                android:maxLength="15"
                 android:inputType="textPersonName" />
 
             <EditText

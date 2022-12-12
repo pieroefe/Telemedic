@@ -71,6 +71,9 @@ public class Registro extends AppCompatActivity {
                 String rolUser = "cliente";
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z.]+";
 
+                System.out.println(contraUser);
+                System.out.println(confirmaUser);
+
                 boolean correoValido = true;
                 boolean passwordValido = true;
                 boolean codigoValido = true;
@@ -82,7 +85,7 @@ public class Registro extends AppCompatActivity {
 
                 }
 
-                if(codigoUser.length()>8){
+                if(codigoUser.length()!=8){
                     Toast.makeText(Registro.this,"Su código debe tener ser 8 números", Toast.LENGTH_SHORT).show();
                     codigoValido =false;
                 }
@@ -103,7 +106,7 @@ public class Registro extends AppCompatActivity {
 
                 }
 
-                if(contraUser != confirmaUser){
+                if(!contraUser.equals(confirmaUser)){
                     Toast.makeText(Registro.this,"Vuelva a colocar la contraseña", Toast.LENGTH_SHORT).show();
                     passwordValido =false;
 
@@ -155,7 +158,7 @@ public class Registro extends AppCompatActivity {
                             public void onSuccess(Void unused) {
                                 finish();
                                 startActivity(new Intent( Registro.this,Login.class));
-                                Toast.makeText(Registro.this,"Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Registro.this,"Usuario registrado correctamente, verificar en su correo", Toast.LENGTH_SHORT).show();
 
                             }
                         }).addOnFailureListener(new OnFailureListener() {
