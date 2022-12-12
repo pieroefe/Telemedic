@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:backgroundTint="#E3E2E2">
+    android:backgroundTint="#E3E2E2"
+    app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
