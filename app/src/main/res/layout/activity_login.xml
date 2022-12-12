@@ -29,10 +29,9 @@
         android:text="Ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.774" />
 
     <Button
         android:id="@+id/btn_login_registrar"
@@ -46,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <Button
         android:id="@+id/button10"
@@ -60,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.945" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="325dp"
@@ -70,8 +69,8 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="325dp"
-            android:layout_height="102dp"
+            android:layout_width="336dp"
+            android:layout_height="117dp"
             android:orientation="vertical">
 
             <EditText

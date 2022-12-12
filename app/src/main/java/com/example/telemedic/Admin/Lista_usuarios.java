@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.SearchView;
 
 import com.example.telemedic.Adapter.FisicaAdapter;
 import com.example.telemedic.Adapter.UsuarioAdapter;
@@ -35,7 +36,9 @@ public class Lista_usuarios extends AppCompatActivity {
     FirebaseFirestore firebaseFirestore;
     FirebaseAuth firebaseAuth;
 
+
     BottomNavigationView bottomNavigationView;
+
 
     private static ArrayList<Usuario> mArrayList = new ArrayList<>();;
 
@@ -45,6 +48,7 @@ public class Lista_usuarios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_usuarios);
         setBottomNavigationView();
+
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -60,6 +64,8 @@ public class Lista_usuarios extends AppCompatActivity {
         usuarioAdapter = new UsuarioAdapter(firestoreRecyclerOptions,this);
         usuarioAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(usuarioAdapter);
+
+
 
 
 
@@ -85,6 +91,9 @@ public class Lista_usuarios extends AppCompatActivity {
         super.onStop();
         usuarioAdapter.stopListening();
     }
+
+
+
 
 
 
