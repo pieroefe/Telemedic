@@ -21,7 +21,9 @@
             android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre:" />
+            android:text="Nombre:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_psicologica_nombre"
@@ -34,7 +36,9 @@
             android:id="@+id/textView23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Recomendación:" />
+            android:text="Recomendación:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_psicologica_recomendacion"
@@ -47,7 +51,9 @@
             android:id="@+id/textView26"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Preguntas Frecuentes:" />
+            android:text="Preguntas Frecuentes:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_psicologica_preguntas"
@@ -60,7 +66,9 @@
             android:id="@+id/textView28"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Errores Frecuentes" />
+            android:text="Errores Frecuentes"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_psicologica_errores"

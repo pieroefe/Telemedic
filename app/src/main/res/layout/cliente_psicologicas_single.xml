@@ -14,20 +14,27 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_nombre_psicologicas_cliente"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_verDetalles_psicologicas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#40BD45"
-                android:text="Ver Detalles" />
+                <TextView
+                    android:id="@+id/tv_nombre_psicologicas_cliente"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_verDetalles_psicologicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#40BD45"
+                    android:text="Ver Detalles" />
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
